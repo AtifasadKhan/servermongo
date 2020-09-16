@@ -11,17 +11,6 @@ const express = require('express');
   useCreateIndex: true
 });
 const Cust = mongoose.model('Cust', { name: String,number: Number, message: String });
-//data entry
-// const kitty = new Cust({name : "Ehlam",number:4, message: "Cancel the NEET"});
-// kitty.save(function(err,cust){
-// 	if(err){
-// 		console.log("Error please try again NOW");
-// 	}
-// 	else{
-// 		console.log(cust);
-// 	}
-// })
-
 
 
 
@@ -29,8 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
  //set view engine to ejs
 app.set('view engine', 'ejs');
 
-//hard coded array 
-// var arr = [{name : "Atif",number:4, message: "Well it's food and service are good!!"}]
 
 
 //home
